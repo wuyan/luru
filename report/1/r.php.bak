@@ -1,0 +1,1257 @@
+﻿<?php
+
+	include("../../conn.php");
+	include("function.php");
+	attack(4);
+	$result = mysql_query("select * from report where id='$_GET[id]'");
+	$row=mysql_fetch_array($result);
+
+
+?>
+
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="report.css" rel="stylesheet" type="text/css" />
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script language="javascript"> DetectFlashVer = 0; </script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+var requiredMajorVersion = 9;
+var requiredMinorVersion = 0;
+var requiredRevision = 45;
+-->
+</script>
+
+<div class=central>
+	<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+	</div> 
+<div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+<div class="top_tu"><img src="tu/down.jpg" width="750" height="101" border="0" alt=""></div>
+
+
+
+<div class=shouye_title><b>&nbsp;上海大众经销商高级服务顾问<br>&nbsp;测评报告
+</b></div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="shouye_all">
+ <div class="shouye_v1"><b>姓&nbsp;&nbsp;&nbsp;&nbsp;名:<span style="margin-left:10px;"><?php echo  $row[姓名] ?></span></b></div>
+</div>
+<div class="shouye_all">
+ <div class="shouye_v1"><b>售后代码:<span style="margin-left:10px;"><?php echo  $row[售后代码] ?></span></b></div>
+</div>
+<div class="shouye_all">
+ <div class="shouye_v1"><b>经&nbsp;销&nbsp;商:<span style="margin-left:10px;"><?php echo  $row[经销商名称] ?></span></b></div>
+</div>
+<div class="shouye_all">
+ <div class="shouye_v1"><b>销售服务中心:<span style="margin-left:10px;"><?php echo  $row[RSSC] ?></span></b></div>
+</div>
+<div class="shouye_all">
+ <div class="shouye_v1"><b>报告编号:<span style="margin-left:10px;"><?php echo  $row[报告编号] ?></span></b></div>
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+		  
+
+		 
+</div>
+
+<div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+<br><br><br><br><br><br><br>
+<div class=title_1>
+目&nbsp;&nbsp;录
+</div>
+
+
+
+
+<div class=text>
+<br><br>
+<div class=title_2>1、前言</div><br>
+&nbsp;&nbsp;&nbsp;&nbsp;介绍测评目的和报告用途。<br><br>
+
+
+<div class=title_2>2、测评方法与标准</div><br>
+&nbsp;&nbsp;&nbsp;&nbsp;描述测评过程中使用的工具，计分方法和测评标准。<br><br>
+<div class=title_2>3、胜任力定义描述</div><br>
+&nbsp;&nbsp;&nbsp;&nbsp;上海大众经销商高级服务顾问岗位胜任力定义描述。<br><br>
+
+<div class=title_2>4、测评结果分析</div><br>
+&nbsp;&nbsp;&nbsp;&nbsp;对您作为高级服务顾问的胜任力进行整体评定。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;对您的每项胜任力进行图表分析和优劣势总结的陈述。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;通过人格特质与认知能力测试的结果，对您的典型思维和行为方式进行详细的描述。
+</div>
+<br><br><br>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+		  
+
+		 
+</div>
+
+<div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+<br><br><br><br><br><br><br>
+
+<div class=title_1>
+前&nbsp;&nbsp;言
+</div>
+<br><br><br>
+
+
+
+<div class=text_2>
+&nbsp;&nbsp;&nbsp;&nbsp;上海大众经销商高级服务顾问测评的目的是测评参试者作为高级服务顾问的胜任力，为高级服务顾问等级认证提供依据，个人测评报告是根据您参加上海大众经销商服务顾问测评中心的测评结果生成，本报告将详细描述测评的胜任力的描述定义，以及您作为高级服务顾问的总体胜任力和各子胜任力的测评结果与分析建议。上海大众VW售后服务部将根据认证管理规定，综合考虑培训考试成绩与测评结果，决定您是否能够获得高级服务顾问资质。本测评报告仅反映您在测评部分的表现。<br>
+</div>
+<br><br><br>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+		  
+
+		 
+</div>
+
+<div class=main>
+
+<div class=line_1></div>
+<div class=line_2></div>
+
+<br><br><br><br><br><br><br>
+<div class=title_1>测评方法与标准</div>
+<br><br><br>
+
+<div class=text>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;此次上海大众经销商服务顾问测评采用的是测评中心技术。作为上海大众经销商服务顾问人才发展策略的重要环节，上海大众经销商服务顾问测评中心通过多种测评工具对服务顾问进行全面的测评，为进行高级服务顾问的认证工作提供依据。<br>
+<br>
+<div class=title_3>测评工具</div>
+上海大众经销商高级服务顾问测评由以下4个测评工具组成：<br>
+<br>
+<div class=line_e><IMG SRC="imagesCAEIPNHP.jpg"  WIDTH="8" HEIGHT="10"  BORDER="0" ALT="">&nbsp;结构化访谈</div>
+<div class=line_e><IMG SRC="imagesCAEIPNHP.jpg"  WIDTH="8" HEIGHT="10"  BORDER="0" ALT="">&nbsp;事件模拟</div>
+<div class=line_e><IMG SRC="imagesCAEIPNHP.jpg"  WIDTH="8" HEIGHT="10"  BORDER="0" ALT="">&nbsp;案例分析</div>
+<div class=line_e><IMG SRC="imagesCAEIPNHP.jpg"  WIDTH="8" HEIGHT="10"  BORDER="0" ALT="">&nbsp;人格特质和认知能力测试</div>
+
+<br><br>
+<div class=title_3>测评标准</div>
+我们通过汇总和分析您在每个测评工具中的表现，最终呈现给您综合的测评结果，即您是否具备为客户提供高效杰出的服务的能力。<br>
+<br>
+在计算您的胜任力总得分时，工作技能和自我管理各占50%的权重。
+<br><br>
+<div class=title_3>评定等级</div>
+
+本次测评采用10分制标准，评定等级分别为：<br><br>
+<div class="bottom_all ">
+ <div class="bottom_v1">
+  <div class="bottom_v1_left"><b>分数</b>
+  </div>
+  <div class="bottom_v1_right" style="background:#376092"><b>评定等级</b>
+  </div>
+ </div>
+  <div class="bottom_v1" style="height:60px">
+   <div class="bottom_v1_left_all">
+  <div class="bottom_v1_left" style="background: #D0D8E8">胜任力总得分≧5
+  </div>
+  <div class="bottom_v1_left" style="background: #E9EDF4;margin-top:2px;">胜任力总得分<5 
+  </div>
+  </div>
+  <div class="bottom_v1_right" style="height:63px;line-height:30px;">
+   <div class="bottom_v1_left" style="background: #D0D8E8; width:148px;">通过
+  </div>
+  <div class="bottom_v1_left" style="background: #E9EDF4; width:148px;margin-top:2px;">未通过
+  </div>
+  </div>
+ </div>
+
+</div>
+</div>
+</div>
+</div>
+<!---------------------------------------------------------------------------->
+<div class=central>
+ <div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+ </div>
+ <div class=main style="height:auto;">
+<div class=line_1></div>
+<div class=line_2></div>
+<br><br><br><br><br><br><br>
+
+<div class=title_1>
+胜任力定义描述—工作技能
+</div><br><br><br>
+<div class="bottom_v5_all">
+ <div class="bottom_v5_left">
+  <div class="bottom_v5_left_v1"><b>胜任力要素</b>
+  </div>
+  <div class="bottom_v5_right_v1"><b>定义描述</b>
+  </div>
+ </div>
+  <div class="bottom_v5_left_v2">
+  <div class="bottom_v5_left_v1_1">故障分析
+  </div>
+  <div class="bottom_v5_right_v1_1"><div style="margin-top:35px;">能够灵活运用汽车方面的技术和知识，对于常见的故障进行分类，为客户提供几个维修方案，并根据分析结果分配维修车辆；在接待故障车和故障分析的过程中，注重与客户的交流，在过程中关注客户，并确保在承诺的时间内交车
+   </div>
+  </div>
+ </div>
+ <div class="bottom_v5_left_v2">
+  <div class="bottom_v5_left_v1_1" style="background: #E9EDF4">业务数据分析
+  </div>
+  <div class="bottom_v5_right_v1_1" style="background: #E9EDF4"><div style="margin-top:40px;">能够在了解业务、客户满意度等数据的基础上，懂得如何分析自己短板，并且基于短板进行整改和提升，以不断提升业务能力与绩效表现
+   </div>
+   </div>
+ </div>
+  <div class="bottom_v5_left_v2">
+  <div class="bottom_v5_left_v1_1" >事故车处理
+  </div>
+  <div class="bottom_v5_right_v1_1"><div style="margin-top:35px;">能够在事故发生后，第一时间关怀客户，安抚客户心理，关爱客户需求，能够解答客户在事故车处理中的相关疑问，给出事故车处理意见，在事故车处理的过程中，能够协调并协助相关工作人员，并持续的关爱客户
+   </div>
+   </div>
+ </div>
+ <div class="bottom_v5_left_v2">
+  <div class="bottom_v5_left_v1_1" style="background: #E9EDF4">突发事件处理
+  </div>
+  <div class="bottom_v5_right_v1_1" style="background: #E9EDF4"><div style="margin-top:35px;">面对客户投诉升级、客户突然来电以及车辆质量问题等突发事件，能够冷静应对，尽快分辨问题，运用良好的沟通技巧，准确把握客户心理，防止客户投诉的升级，安抚客户，尽量减小突发事件的影响性
+
+   </div>
+   </div>
+ </div>
+
+
+</div>
+</div>
+</div>
+<!---------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------->
+<div class=central>
+ <div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+ </div>
+ <div class=main style="height:auto;">
+<div class=line_1></div>
+<div class=line_2></div>
+<br><br><br><br><br><br><br>
+
+<div class=title_1>
+胜任力定义描述—自我管理
+
+</div><br><br><br>
+<div class="bottom_v5_all">
+ <div class="bottom_v5_left">
+  <div class="bottom_v5_left_v1"><b>胜任力要素</b>
+  </div>
+  <div class="bottom_v5_right_v1"><b>定义描述</b>
+  </div>
+ </div>
+  <div class="bottom_v6_left_v2">
+  <div class="bottom_v6_left_v1_1">忠诚度
+  </div>
+  <div class="bottom_v6_right_v1_1"><div style="margin-top:10px;">在个人利益和组织利益有冲突的时候时，展示坚定不移，始终表现出忠实的一面
+   </div>
+  </div>
+ </div>
+ <div class="bottom_v6_left_v2">
+  <div class="bottom_v6_left_v1_1" style="background: #E9EDF4">形象和礼仪
+  </div>
+  <div class="bottom_v6_right_v1_1" style="background: #E9EDF4"><div style="margin-top:10px;">展现专业的形象与礼仪，以创造良好的第一印象。同时能够展示自信，赢得客户或他人的关注，尊敬与信任
+   </div>
+  </div>
+ </div>
+ <div class="bottom_v6_left_v2" style="height:80px;">
+  <div class="bottom_v6_left_v1_1" style="height:80px;line-height:80px;">时间管理
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:80px;"><div style="margin-top:10px;">与自身角色结合，从大量的任务中排定优先次序，制定时间规划，定期监控、评估与调整，以便有效地完成既定目标，并从既有时间中获得最大化结果
+    </div>
+  </div>
+ </div>
+  <div class="bottom_v6_left_v2" style="height:80px;">
+  <div class="bottom_v6_left_v1_1" style="height:80px;line-height:80px;background: #E9EDF4">自我学习与发展
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:80px;background: #E9EDF4"><div style="margin-top:10px;">通过问题解决、在职学习、自我反思与总结、向他人学习等有针对性的方式与途径，丰富知识，提升服务营销能力；展示出很强的自我发展意愿，确保自身的持续提升
+   </div>
+  </div>
+ </div>
+ <div class="bottom_v6_left_v2" style="height:100px;">
+  <div class="bottom_v6_left_v1_1" style="height:100px;line-height:100px;">说服力
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:100px;"><div style="margin-top:11px;">在有效把握他人需求的基础上，巧妙地运用各种说服策略与手段，直接作用于人的情绪、价值观、规则和信念，从而影响人的心态和思想，让他人接受某个想法、计划、活动或产品，并采取行动
+   </div>
+  </div>
+ </div>
+ <div class="bottom_v6_left_v2" style="height:40px;">
+  <div class="bottom_v6_left_v1_1" style="height:40px;line-height:35px;background: #E9EDF4">责任心
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:40px;background: #E9EDF4"><div style="margin-top:9px;">对工作有强烈的责任感并赋予行动
+    </div>
+  </div>
+ </div>
+ <div class="bottom_v6_left_v2" style="height:40px;">
+  <div class="bottom_v6_left_v1_1" style="height:40px;line-height:35px;">团队合作
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:40px;"><div style="margin-top:9px;">能很好地在团队工作，并为团队的目标作贡献
+    </div>
+  </div>
+ </div>
+  <div class="bottom_v6_left_v2" style="height:40px;">
+  <div class="bottom_v6_left_v1_1" style="height:40px;line-height:35px;background: #E9EDF4">稳定性
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:40px;background: #E9EDF4"><div style="margin-top:9px;">可以在压力的环境下保持稳定
+    </div>
+  </div>
+ </div>
+ <div class="bottom_v6_left_v2">
+  <div class="bottom_v6_left_v1_1">注重细节
+  </div>
+  <div class="bottom_v6_right_v1_1" ><div style="margin-top:10px;">全面彻底的关注任务的各个环节和因素，即使是很小的环节和因素
+    </div>
+  </div>
+ </div>
+ <div class="bottom_v6_left_v2" style="height:40px;">
+  <div class="bottom_v6_left_v1_1" style="height:40px;line-height:35px;background: #E9EDF4">灵活性
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:40px;background: #E9EDF4"><div style="margin-top:9px;">能够调整自己的行为去适应不同的风格和环境，从而实现目标
+    </div>
+  </div>
+ </div>
+  <div class="bottom_v6_left_v2" style="height:40px;">
+  <div class="bottom_v6_left_v1_1" style="height:40px;line-height:35px;">坚韧性
+  </div>
+  <div class="bottom_v6_right_v1_1" style="height:40px;"><div style="margin-top:9px;">在实现计划目标的过程当中始终坚持不懈，直到目标实现
+
+    </div>
+  </div>
+ </div>
+
+
+
+</div>
+</div>
+</div>
+<!---------------------------------------------------------------------------->
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+		  
+
+		 
+</div>
+
+<div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+
+<br><br><br><br><br><br><br>
+
+<div class=title_1>
+测评结果与分析
+</div>
+<br><br><br>
+<div class=kuang_2>
+<?php
+
+	if($row[岗位匹配建议] == '通过'){
+	$tongguo="<img src=\"duihao.jpg\"  height=\"28\" border=\"0\" style=\"margin:5px\">";
+	}
+	if($row[岗位匹配建议] == '不通过')
+	{
+	$butongguo="<img src=\"duihao.jpg\"  height=\"28\" border=\"0\" style=\"margin:5px\">";
+	}
+
+?>
+
+
+<div class=result style="margin-left:150px;"> <div class=kuang><?php echo $tongguo;?></div><div class=title_8>通过</div></div>
+<div class=result style="margin-left:110px;"> <div class=kuang><?php echo $butongguo;?></div><div class=title_8>未通过</div></div>
+
+</div>
+<br><br><br>
+
+
+<div class=table_label> </div> <div class=table_label> 胜任力</div><div class=table_label> 说明</div>
+<div class=table_content><table width="238px" height="210px" border="0" cellspacing="0" cellpadding="0"><tr><td align="center" valign="middle">
+
+<table><tr><td><b>个人优势项</b></td></tr></table>
+
+</td></tr></table></div><div class=table_content_v1>
+
+<table width="247px" height="112px" border="0" cellspacing="0" cellpadding="0" style="background:#DCE6F2;"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1">
+<?php
+$arr = array(     
+
+ array(         
+'胜任力id'      =>   '2',        
+'胜任名称'      =>   '时间管理', 
+'分数'      =>   $row[时间管理],        
+         
+   ),   
+   array(         
+'胜任力id'      =>   '3',    
+'胜任名称'      =>   '说服力', 
+'分数'      =>   $row[说服力],        
+         
+   ),   
+      array(         
+'胜任力id'      =>   '4', 
+'胜任名称'      =>   '自我学习',
+'分数'      =>   $row[自我学习],        
+         
+   ),   
+        array(         
+'胜任力id'      =>   '5',    
+'胜任名称'      =>   '形象与礼仪',
+'分数'      =>   $row[形象与礼仪],        
+         
+   ),   
+           array(         
+'胜任力id'      =>   '6',    
+'胜任名称'      =>   '团队合作',
+'分数'      =>   $row[团队合作],        
+         
+   ),   
+              array(         
+'胜任力id'      =>   '7', 
+'胜任名称'      =>   '稳定性',
+'分数'      =>   $row[稳定性],        
+         
+   ),   
+                 array(         
+'胜任力id'      =>   '8',     
+'胜任名称'      =>   '坚韧性',
+'分数'      =>   $row[坚韧性],        
+         
+   ), 
+                    array(         
+'胜任力id'      =>   '9',  
+'胜任名称'      =>   '灵活性',
+'分数'      =>   $row[灵活性],        
+         
+   ), 
+                       array(         
+'胜任力id'      =>   '10',      
+'胜任名称'      =>   '注重细节',
+'分数'      =>   $row[注重细节],        
+         
+   ), 
+   array(         
+'胜任力id'      =>   '11', 
+'胜任名称'      =>   '责任心',
+'分数'      =>   $row[责任心],        
+         
+   ), 
+      array(         
+'胜任力id'      =>   '12',    
+'胜任名称'      =>   '事故车处理',
+'分数'      =>   $row[事故车处理],        
+         
+   ), 
+         array(         
+'胜任力id'      =>   '13',      
+'胜任名称'      =>   '突发事件处理',
+'分数'      =>   $row[突发事件处理],        
+         
+   ), 
+       array(         
+'胜任力id'      =>   '14',    
+'胜任名称'      =>   '故障分析',
+'分数'      =>   $row[故障分析],        
+         
+   ), 
+          array(         
+'胜任力id'      =>   '15',    
+'胜任名称'      =>   '业务数据分析',
+'分数'      =>   $row[业务数据分析],        
+         
+   ), 
+); 
+$temp = sysSortArray($arr,"分数","SORT_DESC","SORT_NUMERIC");   
+echo $temp[0]['胜任名称'];
+
+
+?>
+
+
+
+</td></tr></table>
+
+</td></tr></table>
+<table width="247px" height="111px" border="0" cellspacing="0" cellpadding="0" style="margin-top:2px;background:#DCE6F2"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1"><?php echo $temp[1]['胜任名称']; ?></td></tr></table>
+
+</td></tr></table></div>
+
+
+<div class=table_content_v1>
+
+<table width="247px" height="112px" border="0" cellspacing="0" cellpadding="0" style="background:#DCE6F2;"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1">
+<?php
+$competency=$temp[0]['胜任力id']; 
+		$score=$temp[0]['分数'];
+
+echo competency_zh($competency, $score );
+
+
+?></td></tr></table>
+
+</td></tr></table>
+<table width="247px" height="111px" border="0" cellspacing="0" cellpadding="0" style="margin-top:2px;background:#DCE6F2"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1">
+<?php
+$competency=$temp[1]['胜任力id']; 
+		$score=$temp[1]['分数'];
+
+echo competency_zh($competency, $score);
+
+
+?>
+
+
+</td></tr></table>
+
+</td></tr></table></div>
+<div class=table_content><table width="238px" height="210px" border="0" cellspacing="0" cellpadding="0"><tr><td align="center" valign="middle">
+
+<table><tr><td><b>需要提升项</b></td></tr></table>
+
+</td></tr></table></div>
+
+<div class=table_content_v1><table width="247px" height="112px" border="0" cellspacing="0" cellpadding="0" style="background:#DCE6F2;"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1">
+<?php
+
+$arr = array(     
+
+ array(         
+'胜任力id'      =>   '2',        
+'胜任名称'      =>   '时间管理', 
+'分数'      =>   $row[时间管理],        
+         
+   ),   
+   array(         
+'胜任力id'      =>   '3',    
+'胜任名称'      =>   '说服力', 
+'分数'      =>   $row[说服力],        
+         
+   ),   
+      array(         
+'胜任力id'      =>   '4', 
+'胜任名称'      =>   '自我学习',
+'分数'      =>   $row[自我学习],        
+         
+   ),   
+        array(         
+'胜任力id'      =>   '5',    
+'胜任名称'      =>   '形象与礼仪',
+'分数'      =>   $row[形象与礼仪],        
+         
+   ),   
+           array(         
+'胜任力id'      =>   '6',    
+'胜任名称'      =>   '团队合作',
+'分数'      =>   $row[团队合作],        
+         
+   ),   
+              array(         
+'胜任力id'      =>   '7', 
+'胜任名称'      =>   '稳定性',
+'分数'      =>   $row[稳定性],        
+         
+   ),   
+                 array(         
+'胜任力id'      =>   '8',     
+'胜任名称'      =>   '坚韧性',
+'分数'      =>   $row[坚韧性],        
+         
+   ), 
+                    array(         
+'胜任力id'      =>   '9',  
+'胜任名称'      =>   '灵活性',
+'分数'      =>   $row[灵活性],        
+         
+   ), 
+                       array(         
+'胜任力id'      =>   '10',      
+'胜任名称'      =>   '注重细节',
+'分数'      =>   $row[注重细节],        
+         
+   ), 
+   array(         
+'胜任力id'      =>   '11', 
+'胜任名称'      =>   '责任心',
+'分数'      =>   $row[责任心],        
+         
+   ), 
+      array(         
+'胜任力id'      =>   '12',    
+'胜任名称'      =>   '事故车处理',
+'分数'      =>   $row[事故车处理],        
+         
+   ), 
+         array(         
+'胜任力id'      =>   '13',      
+'胜任名称'      =>   '突发事件处理',
+'分数'      =>   $row[突发事件处理],        
+         
+   ), 
+       array(         
+'胜任力id'      =>   '14',    
+'胜任名称'      =>   '故障分析',
+'分数'      =>   $row[故障分析],        
+         
+   ), 
+          array(         
+'胜任力id'      =>   '15',    
+'胜任名称'      =>   '业务数据分析',
+'分数'      =>   $row[业务数据分析],        
+         
+   ), 
+); 
+$temp = sysSortArray($arr,"分数","SORT_ASC","SORT_NUMERIC");   
+echo $temp[0]['胜任名称'];
+
+
+?>
+</td></tr></table>
+</td></tr></table><table width="247px" height="111px" border="0" cellspacing="0" cellpadding="0" style="margin-top:2px;background:#DCE6F2"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1"><?php echo $temp[1]['胜任名称']; ?></td></tr></table>
+</td></tr></table></div>
+
+
+
+
+<div class=table_content_v1><table width="247px" height="112px" border="0" cellspacing="0" cellpadding="0" style="background:#DCE6F2;"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1">
+<?php
+$competency=$temp[0]['胜任力id']; 
+		$score=$temp[0]['分数'];
+
+echo competency_zh($competency, $score );
+
+
+
+?></td></tr></table>
+</td></tr></table><table width="247px" height="111px" border="0" cellspacing="0" cellpadding="0" style="margin-top:2px;background:#DCE6F2"><tr><td align="center" valign="middle">
+
+<table><tr><td class="result1"><?php
+$competency=$temp[1]['胜任力id']; 
+		$score=$temp[1]['分数'];
+
+echo competency_zh($competency, $score);
+
+
+?></td></tr></table>
+</td></tr></table></div>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+ </div>
+ <div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+
+<br><br><br><br>
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) { 
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,45,2',
+			'width', '750',
+			'height', '450',
+			'scale', 'noscale',
+			'salign', 'TL',
+			'bgcolor', '#F8F8FF',
+			'wmode', 'opaque',
+			'movie', 'charts',
+			'src', 'charts',
+			'FlashVars', 'library_path=charts_library&xml_source=overall.php?user_id=<?php echo $_GET[id]?>', 
+			'id', 'my_chart',
+			'name', 'my_chart',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'quality', 'high',
+			'align', 'middle',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'play', 'true',
+			'devicefont', 'false'
+			); 
+	} else { 
+		var alternateContent = 'This content requires the Adobe Flash Player. '
+		+ '<u><a href=http://www.macromedia.com/go/getflash/>Get Flash</a></u>.';
+		document.write(alternateContent); 
+	}
+}
+// -->
+</script>
+
+<br><br>
+ <div class=kuang_1>                     
+  
+  <div class=marks>胜任力</div><div class=marks>个人</div><div class=marks>全国平均</div><div class=marks>标杆</div>
+   <div class=marks>工作技能</div><div class=marks><?php echo  number_format($row[工作技能平均分], 1) ?></div> <div class=marks>
+   <?php 
+   
+	$sql_avg ="select avg(`工作技能平均分`) as average from report";
+	$result_avg=mysql_query($sql_avg);
+	$row_avg=mysql_fetch_array($result_avg);
+
+	echo number_format($row_avg[average], 1);
+
+
+   ?>
+   </div>  <div class=marks>
+   <?php
+
+	$sql_max ="select * from report  order by  `工作技能平均分` desc limit 1";
+	$result_max=mysql_query($sql_max);
+	$row_max=mysql_fetch_array($result_max);
+
+	echo number_format($row_max[工作技能平均分],1);
+
+   ?>
+   </div>
+   <div class=marks>自我管理</div><div class=marks><?php echo  number_format($row[自我管理平均分],1) ?></div> <div class=marks>
+     <?php 
+   
+	$sql_avg ="select avg(`自我管理平均分`) as average from report";
+	$result_avg=mysql_query($sql_avg);
+	$row_avg=mysql_fetch_array($result_avg);
+
+	echo number_format($row_avg[average],1);
+
+
+   ?>
+   
+   </div>  <div class=marks>
+    <?php
+
+	$sql_max ="select * from report  order by  `自我管理平均分` desc limit 1";
+	$result_max=mysql_query($sql_max);
+	$row_max=mysql_fetch_array($result_max);
+
+	echo number_format($row_max[自我管理平均分], 1);
+
+   ?>
+   
+   
+   </div>
+    <div class=marks>综合得分</div><div class=marks><?php echo  number_format($row[总平均分],1) ?></div> <div class=marks>
+	<?php 
+   
+	$sql_avg ="select avg(`总平均分`) as average from report";
+	$result_avg=mysql_query($sql_avg);
+	$row_avg=mysql_fetch_array($result_avg);
+
+	echo number_format($row_avg[average],1);
+
+
+   ?>
+	
+	
+	</div>  <div class=marks>
+	 <?php
+
+	$sql_max ="select * from report  order by  `总平均分` desc limit 1";
+	$result_max=mysql_query($sql_max);
+	$row_max=mysql_fetch_array($result_max);
+
+	echo number_format($row_max[总平均分],1);
+
+   ?>
+	
+	
+	</div>
+</div>
+
+
+
+<br><br>
+<div style="height:350px;width:800px;border:0px solid black">
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) { 
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,45,2',
+			'width', '750',
+			'height', '350',
+			'scale', 'noscale',
+			'salign', 'TL',
+			'bgcolor', 'ffffff',
+			'wmode', 'opaque',
+			'movie', 'charts_1',
+			'src', 'charts',
+			'FlashVars', 'library_path=charts_library&xml_source=sample_2_1.php?user_id=<?php echo $_GET[id]?>', 
+			'id', 'my_chart',
+			'name', 'my_chart',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'quality', 'high',
+			'align', 'middle',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'play', 'true',
+			'devicefont', 'false'
+			); 
+	} else { 
+		var alternateContent = 'This content requires the Adobe Flash Player. '
+		+ '<u><a href=http://www.macromedia.com/go/getflash/>Get Flash</a></u>.';
+		document.write(alternateContent); 
+	}
+}
+// -->
+</script>
+
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+ </div>
+ <div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+<br><br><br>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) { 
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,45,2',
+				'width', '750',
+			'height', '500',
+			'scale', 'noscale',
+			'salign', 'TL',
+			'bgcolor', '#F8F8FF',
+			'wmode', 'opaque',
+			'movie', 'charts',
+			'src', 'charts',
+			'FlashVars', 'library_path=charts_library&xml_source=tp.php?user_id=<?php echo $_GET[id] ?>', 
+			'id', 'my_chart',
+			'name', 'my_chart',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'quality', 'high',
+			'align', 'middle',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'play', 'true',
+			'devicefont', 'false'
+			); 
+	} else { 
+		var alternateContent = 'This content requires the Adobe Flash Player. '
+		+ '<u><a href=http://www.macromedia.com/go/getflash/>Get Flash</a></u>.';
+		document.write(alternateContent); 
+	}
+}
+// -->
+</script>
+
+<br><br><br><br><br><br>
+ <div class=w_s>
+				<div class=title_5>优劣势总结:</div>
+<div class=dec_dec><?php $text=competency_ld(14,$row[故障分析]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(15,$row[业务数据分析]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(12,$row[事故车处理]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(13,$row[突发事件处理]); echo $text; ?></div>
+
+
+
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+ </div>
+ <div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+<br><br><br>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) { 
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,45,2',
+				'width', '750',
+			'height', '400',
+			'scale', 'noscale',
+			'salign', 'TL',
+			'bgcolor', '#F8F8FF',
+			'wmode', 'opaque',
+			'movie', 'charts',
+			'src', 'charts',
+			'FlashVars', 'library_path=charts_library&xml_source=tp_s.php?user_id=<?php echo $_GET[id] ?>', 
+			'id', 'my_chart',
+			'name', 'my_chart',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'quality', 'high',
+			'align', 'middle',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'play', 'true',
+			'devicefont', 'false'
+			); 
+	} else { 
+		var alternateContent = 'This content requires the Adobe Flash Player. '
+		+ '<u><a href=http://www.macromedia.com/go/getflash/>Get Flash</a></u>.';
+		document.write(alternateContent); 
+	}
+}
+// -->
+</script>
+
+<br><br><br><br>
+ <div class=w_s>
+				<div class=title_5>发展建议:</div>
+<div class=dec_dec><?php $text=competency_zh(14,$row[故障分析]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(15,$row[业务数据分析]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(12,$row[事故车处理]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(13,$row[突发事件处理]); echo $text; ?></div>
+
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class=central>
+
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+ </div>
+ <div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+<br><br>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) { 
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,45,2',
+				'width', '750',
+			'height', '500',
+			'scale', 'noscale',
+			'salign', 'TL',
+			'bgcolor', '#F8F8FF',
+			'wmode', 'opaque',
+			'movie', 'charts',
+			'src', 'charts',
+			'FlashVars', 'library_path=charts_library&xml_source=ms.php?user_id=<?php echo $_GET[id] ?>', 
+			'id', 'my_chart',
+			'name', 'my_chart',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'quality', 'high',
+			'align', 'middle',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'play', 'true',
+			'devicefont', 'false'
+			); 
+	} else { 
+		var alternateContent = 'This content requires the Adobe Flash Player. '
+		+ '<u><a href=http://www.macromedia.com/go/getflash/>Get Flash</a></u>.';
+		document.write(alternateContent); 
+	}
+}
+// -->
+</script>
+
+
+ <div class=w_s><br><br><br>
+				<div class=title_5>优劣势总结:</div>
+<div class=dec_dec><?php $text=competency_ld(1,$row[忠诚度]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(2,$row[时间管理]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(3,$row[说服力]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(4,$row[自我学习]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(5,$row[形象与礼仪]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(11,$row[责任心]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(6,$row[团队合作]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(7,$row[稳定性]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(8,$row[坚韧性]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(10,$row[注重细节]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_ld(9,$row[灵活性]); echo $text; ?></div>
+
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div class=central>
+<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+ </div>
+ <div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+
+<br>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) { 
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,45,2',
+				'width', '750',
+			'height', '400',
+			'scale', 'noscale',
+			'salign', 'TL',
+			'bgcolor', '#F8F8FF',
+			'wmode', 'opaque',
+			'movie', 'charts',
+			'src', 'charts',
+			'FlashVars', 'library_path=charts_library&xml_source=ms_s.php?user_id=<?php echo $_GET[id] ?>', 
+			'id', 'my_chart',
+			'name', 'my_chart',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'quality', 'high',
+			'align', 'middle',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'play', 'true',
+			'devicefont', 'false'
+			); 
+	} else { 
+		var alternateContent = 'This content requires the Adobe Flash Player. '
+		+ '<u><a href=http://www.macromedia.com/go/getflash/>Get Flash</a></u>.';
+		document.write(alternateContent); 
+	}
+}
+// -->
+</script>
+
+
+ <div class=w_s><br><br><br><br>
+				<div class=title_5>发展建议:</div>
+
+<div class=dec_dec><?php $text=competency_zh(2,$row[时间管理]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(3,$row[说服力]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(4,$row[自我学习]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(5,$row[形象与礼仪]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(11,$row[责任心]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(6,$row[团队合作]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(7,$row[稳定性]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(8,$row[坚韧性]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(10,$row[注重细节]); echo $text; ?></div>
+<div class=dec_dec><?php $text=competency_zh(9,$row[灵活性]); echo $text; ?></div>
+
+  </div>
+</div>
+</div>
+<div class=central_v1>
+	<div id=top>
+		<div class=logo>	<img src="tu/logo.jpg" alt="" height="70" border="0"></div>
+	</div> 
+<div class=main>
+<div class=line_1></div>
+<div class=line_2></div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class=shouye_title style="color:black;"><b>人格特质和认知能力报告
+
+</b></div>
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+</html>
+
+
+

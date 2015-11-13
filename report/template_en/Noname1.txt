@@ -1,0 +1,24 @@
+<?php 
+
+function exp($competency_id,$score)
+
+$sql=mysql_query("select * from competency where id=$competency_id")
+
+if $core>=7 and $socre <=10
+{
+return $rs[s]
+}
+if $core>=7 and $socre <=10
+{
+return $rs[a]
+}
+if $core>=7 and $socre <=10
+{
+return $rs[w]
+}
+
+
+$text=exp($comptency_id,$score);
+echo $text;
+
+?>

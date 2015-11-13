@@ -1,0 +1,84 @@
+<chart>
+	<axis_category shadow='shadow2' size='13' color='4e627c' alpha='85' font="宋体"    />
+	<axis_ticks value_ticks='' category_ticks=''  />
+	<axis_value  size='18' max='10' color='557392' alpha='100' steps='5'  min='0' line-thickness='0' />
+	
+	<chart_border bottom_thickness='0' left_thickness='0' />
+	<chart_data>
+		<row>
+			<null/>
+			<string>推动内部工作小组</string>
+			<string>推动跨部门合作</string>
+			<string>推动外部合作</string>
+			<string>凝聚团队</string>
+		
+		
+		</row>
+		<row>
+			<string>个人</string>
+			<number>6</number>
+			<number>9</number>
+			<number>4</number>
+			<number>9</number>
+		
+		
+		</row>
+		<row>
+			<string>平均</string>
+			<number>8</number>
+			<number>7</number>
+			<number>8</number>
+			<number>9</number>
+			
+			
+		</row>
+	</chart_data>
+	<chart_grid_h alpha='30' color='000000' thickness='1' type='dashed'  />
+	<chart_grid_v alpha='10' color='000000' thickness='20' type='solid'  />
+	<chart_pref point_shape='circle' point_size='0' fill_shape='true' grid='circular' type='line'  />
+
+
+<chart_rect bevel='bg' shadow='high' x='235' y='130' width='270' height='270'  positive_color='5e5e5e' positive_alpha='10' />
+	
+	<chart_type>polar</chart_type>
+	
+	<draw>
+	<text shadow='high' transition='dissolve' delay='0' duration='0' alpha='100' size='40' x='220' y='-15' width='300' height='75' h_align='center' v_align='bottom'  font="宋体" color="557392">团队合作</text>
+	
+
+	 <circle layer='background'
+           
+         
+           x='370' 
+           y='265' 
+           radius='180'  
+           fill_color='5e5e5e' 
+           fill_alpha='0' 
+           line_color='5e5e5e' 
+           line_alpha='20'
+           line_thickness='40'
+         
+           />
+
+
+
+	</draw>
+	<filter>
+
+	<shadow id='high' distance='5' angle='45' alpha='25' blurX='10' blurY='10' />
+		<shadow id='shadow1' distance='2' angle='45' color='0' alpha='100' blurX='10' blurY='10' />
+		<shadow id='shadow2' distance='1' angle='45' color='0' alpha='50' blurX='3' blurY='3' />
+		<bevel id='bevel1' angle='45' blurX='10' blurY='10' distance='5' highlightAlpha='25' highlightColor='ffffff' shadowAlpha='35' type='outer' />
+		<bevel id='bg' angle='45' blurX='50' blurY='50' distance='10' highlightAlpha='50' highlightColor='ffffff' shadowAlpha='10' inner='true' />
+	</filter>
+	
+	<legend shadow='shadow2' x='260' y='450' width='280' height='40' margin='3' fill_alpha='0' layout='horizontal' bullet='square' size='12' color='4e627c' alpha='75'  font="宋体" />
+	
+	<series_color>
+		<color>ff4400</color>
+		<color>4e627c</color>
+	</series_color>
+	
+</chart>
+
+ 

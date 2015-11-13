@@ -1,0 +1,23 @@
+			<td style="width:100px;border:0px solid black;background-color:#F2F2F2;">
+			<?php 
+			$result_score = mysql_query("select * from score where user_id='$_GET[id]' and sub_competency_id=35");
+			$row_score=mysql_fetch_array($result_score);
+		 	echo number_format($row_score[score], 1);
+			?>
+			</td>
+			<td style="width:100px;border:0px solid black;background-color:#F2F2F2;">
+			<?php
+				$sql_avg ="select avg(`score`) as average from score where sub_competency_id=35";
+				$result_avg=mysql_query($sql_avg);
+				$row_avg=mysql_fetch_array($result_avg);
+				echo number_format($row_avg[average], 1);
+			?>
+			</td>
+			<td style="width:100px;border:0px solid black;background-color:#F2F2F2;">
+			<?php
+				$sql_max ="select * from score  where sub_competency_id=35 order by  `score` desc limit 1";
+				$result_max=mysql_query($sql_max);
+				$row_max=mysql_fetch_array($result_max);
+				echo number_format($row_max[score], 1);
+			?>
+			</td>
